@@ -1,0 +1,138 @@
+//COLORS
+$BNAblue: #005e85;
+$BNAlightBlue: #23abe0;
+
+
+.coin-search-first-page{
+    //COINS POSITIONS
+    $coin-size: 1.5dvh;
+    $bigCoinSize: 2dvh; //coin-size + bigCoinSize
+
+    $coin1-top: 30dvh;
+    $coin1-left: 49.5dvh;
+
+    $coin2-top: 31dvh;
+    $coin2-left: 26vw;
+
+    $coin3-top: 72dvh;
+    $coin3-left: 1dvh;
+
+    $coin4-top: 55dvh;
+    $coin4-left: 75vw;
+
+    //WALLET POSITION
+    $wallet-top: 83dvh;
+    $wallet-left: 38vw;
+
+    
+    height: 100dvh;
+    background-image: url(../../../../img/coinsearch/background2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-size: cover;
+    background-position-x: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    .header-container{
+        width: 90%;
+        position: absolute;
+        top: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 17vh;
+    }
+
+    .found-text{
+        background-color: $BNAblue;
+        color: rgb(255, 255, 255);
+        box-shadow: #003f5a 0 0.7vh;
+        z-index: 3;
+        font-size: 5.5vw;
+        padding: 1.2vh 2vh;
+        width: 9.7vh;
+        height: fit-content;
+        border-radius: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        user-select: none;
+        font-weight: bold;
+    }
+
+    .wallet{
+        position: absolute;
+        left: $wallet-left;
+        top: $wallet-top;
+        width: 25%;
+        z-index: 2;
+    }
+
+    .coin-icon{
+        width: 3vh;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        margin-left: 1vh;
+    }
+
+    .coin{
+        position: absolute;
+        width: $coin-size;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        z-index: 1;
+        filter: blur(0px);
+    }
+
+    .coin1-animate{
+        width: $coin-size + $bigCoinSize;
+        transition: transform 2s ease-in-out;
+        transform: translate(calc($wallet-left - $coin1-left + 5vh), calc($wallet-top - $coin1-top + 5vh));
+    }
+
+    .coin2-animate{
+        width: $coin-size + $bigCoinSize;
+        transition: transform 2s ease-in-out;
+        transform: translate(calc($wallet-left - $coin2-left + 5vh), calc($wallet-top - $coin2-top + 5vh));
+    }
+
+    .coin3-animate{
+        width: $coin-size + $bigCoinSize;
+        transition: transform 2s ease-in-out;
+        transform: translate(calc($wallet-left - $coin3-left + 5vh), calc($wallet-top - $coin3-top + 5vh));
+    }
+
+    .coin4-animate{
+        width: $coin-size + $bigCoinSize;
+        transition: transform 2s ease-in-out;
+        transform: translate(calc($wallet-left - $coin4-left + 5vh), calc($wallet-top - $coin4-top + 5vh));
+    }
+
+    #coin1{
+        top: $coin1-top;
+        left: $coin1-left;
+    }
+    #coin2{
+        top: $coin2-top;
+        left: $coin2-left;
+    }
+    #coin3{
+        top: $coin3-top;
+        left: $coin3-left;
+    }
+    #coin4{
+        top: $coin4-top;
+        left: $coin4-left;
+    }
+}
+

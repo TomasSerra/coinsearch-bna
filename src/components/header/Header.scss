@@ -1,0 +1,20 @@
+//COLORS
+$BNAblue: #005e85;
+$BNAlightBlue: #23abe0;
+
+.game-header{
+    background-color: $BNAblue;
+    width: 90%;
+    height: 8%;
+    border-radius: 200px;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #003f5a 0 0.7vh;
+    padding: 2vh 3vh;
+    user-select: none;
+}

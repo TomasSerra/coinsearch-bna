@@ -1,0 +1,33 @@
+.button-border{
+    background-color: rgb(104, 104, 104);
+    border-radius: 200px;
+    width: 30vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+
+    .button{
+        border-radius: 200px;
+        background-color: rgb(236, 236, 236);
+        width: 93%;
+        height: 8vh;
+        box-shadow: 0 1vh rgb(185, 185, 185);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh;
+
+        h2{
+            font-size: 3.5vh;
+            font-weight: lighter;
+        }
+    }
+
+    .button:active{
+        box-shadow: 0 0 rgba(185, 185, 185, 0);
+        margin-bottom: 1vh;
+    }
+}

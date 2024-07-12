@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Kievit';
+  src: url('./fonts/KievitOT-Regular.otf');
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Kievit';
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  height: 100dvh;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
