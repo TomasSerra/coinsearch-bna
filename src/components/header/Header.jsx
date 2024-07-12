@@ -4,7 +4,7 @@ import './Header.scss';
 function Header() {
     return (
         <>
-        <div className='game-header'>Encuentra las monedas escondidas</div>
+        <div className='game-header'>Encontrá las monedas escondidas</div>
         </>
     );
 }
