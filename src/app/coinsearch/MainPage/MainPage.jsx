@@ -12,7 +12,7 @@ function MainPage({goToNextPage}) {
       </div>
       <div className="center">
         <h1>¡Bienvenido!</h1>
-        <p>Encuentra todas las monedas antes de que se acabe el tiempo</p>
+        <p>Encontrá las 4 monedas antes que se acabe el tiempo</p>
         <img src={Image} className='image' />
       </div>
       <div className="button">
