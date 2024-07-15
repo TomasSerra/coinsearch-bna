@@ -1,12 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './MainPage.scss'
 
 import Logo from '../../../img/home-end/logo.png'
 import Image from '../../../img/home-end/image.png'
+import SecretButton from '../../../components/SecretButton/SecretButton'
+import StatsViewer from '../../../components/StatsViewer/StatsViewer'
 
 function MainPage({goToNextPage}) {
+  const [showStats, setShowStats] = useState(false)
   return (
     <div className='home-page'>
+      <div style={{position: 'absolute', top: 0, left: 0, width: '15vw', height: '15vw'}}>
+        <SecretButton whenClicked={() => setShowStats(true)} totalClicks={2}/>
+      </div>
+      {showStats && <StatsViewer whenClose={()=>{setShowStats(false)}} storageKey={'stats-coinsearch-bna'}/>}
       <div className="header">
         <img src={Logo} />
       </div>
